@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Universe — Advanced Canvas Animation</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<canvas id="universe"></canvas>
+
+<div class="hud panel">
+  <div class="title">Universe Controls</div>
+  <div class="row">
+    <button class="btn" id="togglePause">Pause</button>
+    <button class="btn" id="burst">Supernova</button>
+    <button class="btn" id="comet">Comet</button>
+    <label class="badge"><input type="checkbox" id="nebula" checked> Nebula</label>
+    <label class="badge"><input type="checkbox" id="accDisk" checked> Accretion Disk</label>
+  </div>
+  <div class="row">
+    <label class="badge">Star Density <input id="starDensity" class="slider" type="range" min="200" max="2000" value="900"></label>
+  </div>
+  <div class="row" style="font-size:12px;opacity:.9;gap:12px;">
+    <span>FPS: <span id="fps">0</span></span>
+    <span>Objects: <span id="objCount">0</span></span>
+  </div>
+</div>
+
+<div class="legend panel">
+  <div class="title">Shortcuts</div>
+  <div style="font-size:12px;opacity:.9;line-height:1.5;margin-top:6px;">
+    <span class="kbd">Space</span> Pause/Play •
+    <span class="kbd">N</span> Toggle Nebula •
+    <span class="kbd">B</span> Supernova •
+    <span class="kbd">C</span> Comet •
+    <span class="kbd">D</span> Toggle Accretion Disk
+  </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
